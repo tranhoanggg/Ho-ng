@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kinh Đô</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="./assets/css/base.css">
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="./fonts/fontawesome-free-6.6.0-web/css/all.min.css">
+        <link rel="stylesheet" href="./fonts/themify-icons-font/themify-icons/themify-icons.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="web">
+            <!-- HEADER -->
+            <header class="header">
+                <div class="grid__full-width">
+                    <div class="header__logo">
+                        <a href="#"><img src="./assets/img/Logo.png" alt="Kinh Đô" class=""></a>                           
+                    </div>
+
+                    <div class="header__navbar-1">
+                        <a href="#" class="header__navbar-item header__navbar-home">Trang chủ</a>
+                        <a href="#" class="header__navbar-item header__navbar-intro">Giới thiệu</a>
+                        <a href="#" class="header__navbar-item header__navbar-product">Sản phẩm</a>
+                        <a href="#" class="header__navbar-item header__navbar-catalog">Catalog</a>
+                        <a href="#" class="header__navbar-item header__navbar-access">Liên hệ</a>
+                    </div>
+                    
+                    <div class="header__navbar-2">
+                        <a href="#" class="header__navbar-item"><i class="ti-search"></i></a>
+                        <a href="#" class="header__navbar-item"><i class="ti-shopping-cart"></i></a>
+                        <a href="#" class="header__navbar-item"><i class="ti-user"></i></a>
+                    </div>
+                </div>
+            </header>
+
+            <!-- CONTENT -->
+            <div id="content" class="content">
+                <div class="grid__full-width">
+                    <div id="content__form" class="content__form">
+                        <div id="sign-up-form" class="form__sign-up">
+                            <div class="content__form-logo">
+                                <img src="./assets/img/Logo.png" alt="Kinh Đô" class="">                          
+                            </div>
+
+                            <div class="content__form-title">
+                                <h1>
+                                    <p>ĐĂNG KÝ</p>
+                                    <p>ĐỂ BẮT ĐẦU MUA HÀNG</p> 
+                                </h1>                  
+                            </div>
+
+                            <div class="content__form-email">
+                                <div class="content__form-email__heading">Địa chỉ email</div>
+                                <input id="sign-up-email" type="email">
+                            </div>
+
+                            <div class="content__form-name">
+                                <div class="content__form-name__heading">Họ và tên</div>
+                                <input id="sign-up-name" type="text">
+                            </div>
+
+                            <div class="content__form-password">
+                                <div class="content__form-password__heading">Mật khẩu</div>
+                                <input id="sign-up-password" type="text">
+                                <a href="#"><i class="fa-regular fa-eye-slash"></i></a>
+                            </div>
+
+                            <btn id="sign-up-btn" class="content__form-btn btn-sign-up" onclick="ChangeToLogIn()">
+                                Đăng ký
+                            </btn>
+
+                            <div class="content__form-mores">
+                                <svg xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="6" y1="8" x2="290" y2="8" style="stroke:white; stroke-width:2" />
+                                </svg>
+
+                                <div class="content__form-more">hoặc</div>
+
+                                <svg xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="10" y1="8" x2="295" y2="8" style="stroke:white; stroke-width:2" />
+                                </svg>
+                            </div>
+                            
+                            <btn class="content__form-btn btn-sign-up__option-1">
+                                <img src="./assets/img/Facebook_icon_color.png" alt="">
+                                Đăng ký bằng Facebook
+                            </btn>
+
+                            <btn class="content__form-btn btn-sign-up__option-2">
+                                <img src="./assets/img/Google_Icon_color.png" alt="">
+                                Đăng ký bằng Google
+                            </btn>
+
+                            <svg width="640px" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="0" y1="64" x2="640" y2="64" style="stroke:#FEFAFA; stroke-width:2" />
+                            </svg>
+
+                            <div class="content__form-has-acc">
+                                <span class="content__form-has-acc-heading">Bạn đã có tài khoản?</span>
+                                <a href="#"  class="content__form-has-acc-link" onclick="ChangeToLogIn()"><span>Đăng nhập tại đây.</span></a>
+                            </div>
+                        </div>
+                        
+                        <div id="log-in-form" class="form__log-in">
+                            <div class="form__log-in content__form-logo">
+                                <img src="./assets/img/Logo.png" alt="Kinh Đô" class="">                          
+                            </div>
+
+                            <div class="form__log-in content__form-title">
+                                <h1> ĐĂNG NHẬP VÀO KINH ĐÔ</h1>                  
+                            </div>
+
+                            <btn class="content__form-btn btn-sign-up__option-1">
+                                <img src="./assets/img/Facebook_icon_color.png" alt="">
+                                Đăng ký bằng Facebook
+                            </btn>
+
+                            <btn class="content__form-btn btn-sign-up__option-2">
+                                <img src="./assets/img/Google_Icon_color.png" alt="">
+                                Đăng ký bằng Google
+                            </btn>
+
+                            <svg width="740px" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="0" y1="64" x2="740" y2="64" style="stroke:#E6E6E6; stroke-width:2; opacity:0.4" />
+                            </svg>
+
+                            <div class="content__form-email">
+                                <div class="content__form-email__heading">Email của bạn</div>
+                                <input type="text">
+                            </div>
+
+                            <div class="content__form-password">
+                                <div class="content__form-password__heading">Mật khẩu</div>
+                                <input type="text">
+                                <a href="#"><i class="fa-regular fa-eye-slash"></i></a>
+                            </div>
+
+                            <btn class="content__form-btn btn-sign-up">
+                                Đăng nhập
+                            </btn>
+
+                            <a href="#"  class="content__form-password-reset content__form-has-acc-link" onclick="ChangeToResetPass()">Quên mật khẩu của bạn?</a>
+
+                            <div class="content__form-no-acc">
+                                <span class="content__form-no-acc-heading">Bạn chưa có tài khoản?</span>
+                                <a href="#"  class="content__form-no-acc-link"><span onclick="ChangeToSignUp()">Đăng ký ngay.</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content-second" class="content-second">
+                <div class="grid__full-width">
+                    <div class="content-second__form">
+                        <div id="form-reset-pass" class="content-second__form-reset-pass">
+                            <div class="form__reset-pass content__form-logo">
+                                <img src="./assets/img/Logo.png" alt="Kinh Đô" class="">                          
+                            </div>
+
+                            <div class="form__reset-pass content__form-title">
+                                <h1>ĐẶT LẠI MẬT KHẨU CỦA BẠN</h1>                  
+                            </div>
+
+                            <div class="form__reset-pass content__form-description">
+                                Nhập địa chỉ email được liên kết với tài khoản của bạn và chúng tôi sẽ gửi cho bạn một email.               
+                            </div>
+
+                            <div class="content__form-email">
+                                <div class="content__form-email__heading">Email của bạn</div>
+                                <input type="text" id="email-reset-input">
+                            </div>
+
+                            <btn class="content__form-btn btn-send-link" onclick="ChangeToResetConfirm()">
+                                Gửi link
+                            </btn>
+                        </div>
+
+                        <div id="form-reset-confirm" class="content-second__form-reset-confirm">
+                            <div class="form__reset-confirm content__form-logo">
+                                <img src="./assets/img/Logo.png" alt="Kinh Đô" class="">                          
+                            </div>
+
+                            <div class="form__reset-confirm content__form-title">
+                                <h1>KIỂM TRA HỘP THƯ ĐẾN CỦA BẠN</h1>                  
+                            </div>
+
+                            <div class="form__reset-confirm content__form-description">
+                                Chúng tôi đã gửi cho bạn một email. Hãy làm theo hướng dẫn để truy cập tài khoản Kinh Đô của bạn.               
+                            </div>
+
+                            <btn class="content__form-btn btn-back-home" onclick="ChangeToLogIn()">
+                                Quay lại đăng nhập
+                            </btn>
+
+                            <btn class="content__form-btn btn-justify" onclick="ChangeToResetPass()">
+                                <i class="ti-pencil"></i>
+                                Chỉnh sửa email
+                            </btn>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content-third" class="content-third">
+                <div class="grid__full-width">
+                    <div class="content-third__image">
+                        <img class="elip" src="./assets/img/Ellipse.png" alt="">
+                        <img class="substract"  src="./assets/img/Subtract.png" alt="">
+                        <img class="tick"  src="./assets/img/tick.png" alt="">
+                    </div>
+
+                    <div class="content-third__heading">
+                        <span>ĐƠN HÀNG CỦA BẠN ĐÃ THANH TOÁN</span>
+                        <span>THÀNH CÔNG !</span> 
+                    </div>
+
+                    <btn class="content__form-btn btn-back-home">
+                        Quay lại trang chủ
+                    </btn>
+                </div>
+            </div>
+
+            <div id="content-four" class="content-four">
+                <div class="grid__full-width">
+                    <div class="content-four content__form-logo">
+                        <img src="./assets/img/Logo.png" alt="Kinh Đô" class="">                          
+                    </div>
+
+                    <div class="content-four__heading">
+                        THANH TOÁN ĐƠN HÀNG CỦA BẠN
+                    </div>
+
+                    <div class="content-four__info">
+                        <div class="content-four__sub-heading">
+                            Thông tin đặt hàng
+                        </div>
+
+                        <div class="content__four-name-input">
+                            <div class="content__four-name-input__heading">Họ và tên*</div>
+                            <input type="text">
+                        </div>
+
+                        <div class="content__four-email-input">
+                            <div class="content__four-email-input__heading">Địa chỉ email*</div>
+                            <input type="text">
+                        </div>
+
+                        <div class="content__four-phone-input">
+                            <div class="content__four-phone-input__heading">Số điện thoại*</div>
+                            <input type="text">
+                        </div>
+
+                        <label class="content__four-city-select__heading" for="city-select">Tỉnh/Thành phố*</label>
+                        <select class="content__four-city-select" name="city" id="city-select">
+                            <option value="">--Please choose an option--</option>
+                            <option value="HN">Hà Nội</option>
+                            <option value="HCM">Hồ Chí Minh</option>
+                            <option value="PT">Phú Thọ</option>
+                            <option value="NĐ">Nam Định</option>
+                            <option value="TH">Thanh Hoá</option>
+                            <option value="BN">Bắc Ninh</option>
+                        </select>
+
+                        <label class="content__four-district-select__heading" for="district-select">Quận/Huyện*</label>
+                        <select class="content__four-district-select" name="district" id="district-select">
+                            <option value="">--Please choose an option--</option>
+                            <option value="HN">Hà Nội</option>
+                            <option value="HCM">Hồ Chí Minh</option>
+                            <option value="PT">Phú Thọ</option>
+                            <option value="NĐ">Nam Định</option>
+                            <option value="TH">Thanh Hoá</option>
+                            <option value="BN">Bắc Ninh</option>
+                        </select>
+
+                        <label class="content__four-town-select__heading" for="town-select">Phường/Xã*</label>
+                        <select class="content__four-town-select" name="town" id="town-select">
+                            <option value="">--Please choose an option--</option>
+                            <option value="HN">Hà Nội</option>
+                            <option value="HCM">Hồ Chí Minh</option>
+                            <option value="PT">Phú Thọ</option>
+                            <option value="NĐ">Nam Định</option>
+                            <option value="TH">Thanh Hoá</option>
+                            <option value="BN">Bắc Ninh</option>
+                        </select>
+
+                        <div class="content__four-address-input">
+                            <div class="content__four-address-input__heading">Địa chỉ cụ thể*</div>
+                            <input type="text">
+                        </div>
+
+                        <div class="content__four-note-input">
+                            <div class="content__four-note-input__heading">Chú thích đơn hàng*</div>
+                            <input type="text">
+                        </div>
+
+                        <div class="content-four__sub-heading">
+                            Thông tin thanh toán sản phẩm
+                        </div>
+
+                        <div class="content-four__product-info">
+                            <table class="content-four__product-info-table">
+                                <tr class="content-four__product-info-table__heading">
+                                    <th class="product">Sản phẩm</th>
+                                    <th class="price">Đơn giá</th>
+                                    <th class="quantity">Số lượng</th>
+                                    <th class="total">Thành tiền</th>
+                                </tr>
+                                <tr class="content-four__product-info-table__item">
+                                    <td class="item-name">
+                                        <img src="./assets/img/product.png" alt="">
+                                        <div>Hộp thu tuyết 6 bánh</div>
+                                    </td>
+                                    <td class="item-price">450.000VND</td>
+                                    <td class="item-quantity">1</td>
+                                    <td class="item-total">450.000VND</td>
+                                </tr>
+                                <tr class="content-four__product-info-table__item">
+                                    <td class="item-name">
+                                        <img src="./assets/img/product.png" alt="">
+                                        <div>Hộp thu tuyết 6 bánh</div>
+                                    </td>
+                                    <td class="item-price">450.000VND</td>
+                                    <td class="item-quantity">1</td>
+                                    <td class="item-total">450.000VND</td>
+                                </tr>
+                            </table>
+
+                            <svg width="1200px" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="0" y1="8" x2="1175" y2="8" style="stroke:#E7E8E8; stroke-width:2" />
+                            </svg>
+
+                            <table class="content-four__user-info-table">
+                                <tr class="content-four__user-info-table__heading">
+                                    <th class="address">Địa chỉ nhận hàng</th>
+                                    <th class="fee">Phí vận chuyển</th>
+                                </tr>
+                                <tr class="content-four__user-info-table__item">
+                                    <td class="address-info">Phường Mộ Lao, quận Hà Đông, thành phố Hà Nội</td>
+                                    <td class="fee-info">30.000VND</td>
+                                </tr>
+                            </table>
+
+                            <div class="content-four__product-sale-off">
+                                <div class="content-four__product-sale-off__heading">
+                                    Mã giảm giá (Nhập vào nếu có):
+                                </div>
+                                <div class="content-four__product-sale-off__input">
+                                    <input type="text" class="sale-off__input">
+                                    <button type="text" class="sale-off__btn">Áp dụng</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content-four__sub-heading pay-method">
+                            Phương thức thanh toán
+                        </div>
+
+                        <btn id="btn-cod-pay" class="content__form-btn btn-cod-pay" onclick="CodPayChosen()">
+                            Thanh toán khi nhận hàng (COD)
+                        </btn>
+
+                        <btn id="btn-qr-pay" class="content__form-btn btn-qr-pay" onclick="QrPayChosen()">
+                            Chuyển khoản qua ngân hàng (QR Code)
+                        </btn>
+
+                        <div class="content-four__sub-heading pay-total">
+                            Tổng thanh toán: 
+                        </div>
+
+                        <svg width="1400px" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="0" y1="8" x2="1320" y2="8" style="stroke:rgba(0, 0, 0, 0.4); stroke-width:2" />
+                        </svg>
+
+                        <btn id="pay-order-btn" class="content__form-btn btn-order" onclick="ChangeToPaySuccess()">
+                            Đặt hàng
+                        </btn>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOOTER -->
+            <div class="footer">
+                <div class="grid__full-width">
+                    <div class="footer__access">
+                        <div class="footer__access-heading">
+                            Liên hệ
+                        </div>
+                        <input class="footer__access-name footer__access-small-input" placeholder="Tên của bạn"></input>
+                        <input class="footer__access-email footer__access-small-input" placeholder="Email của bạn"></input>
+                        <input class="footer__access-opinion footer__access-big-input" placeholder="Góp ý cho chúng tôi"></input>
+                        <button class="footer__access-send-btn">Gửi</button>
+                    </div>
+
+                    <div class="footer__address">
+                        <div class="footer__address-heading">Địa chỉ</div>
+                        <div class="footer__address-sub-heading">NHÀ PHÂN PHỐI BÁNH KINH ĐÔ</div>
+                        <ul class="footer__address-list">
+                            <li class="footer__addredd-list-item">Địa chỉ: 116/46 Bình Lợi, phường 13, quận Bình Thanh, thành phố Hồ Chí Minh</li>
+                            <li class="footer__addredd-list-item">Hotline 1: 0919 838 786 - Zalo</li>
+                            <li class="footer__addredd-list-item">Hotline 2: 0908 003 880 - Zalo</li>
+                            <li class="footer__addredd-list-item">Email: banhkinhdo.net@gmail.com</li>
+                            <li class="footer__addredd-list-item">Website: www.banhkinhdo.vn</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__policy">
+                        <div class="footer__address-heading">Chính sách</div>
+                        <ul class="footer__address-list">
+                            <li class="footer__addredd-list-item">Phương thức thanh toán</li>
+                            <li class="footer__addredd-list-item">Chính sách bảo mật</li>
+                            <li class="footer__addredd-list-item">Chính sách đổi trả</li>
+                            <li class="footer__addredd-list-item">Phương thức vận chuyển</li>
+                            <li class="footer__addredd-list-item">Hướng dẫn đặt hàng</li>
+                            <li class="footer__addredd-list-item">Blog chia sẻ</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__social">
+                        <a href="#"><img src="./assets/img/Facebook_icon_color.png" alt="Facebook" class="FB"></a>
+                        <a href="#"><img src="./assets/img/Instagram.png" alt="Instagram" class="Ins"></a>
+                        <a href="#"><img src="./assets/img/twitter.png" alt="Twitter" class="Twi"></a>
+                        <a href="#"><img src="./assets/img/Tiktok.png" alt="Tiktok" class="Tiktok"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        var home = 0, signup = 1, login = 0, btncodpay = 0, btnqrpay = 0,
+            resetpass = 0, resetconfirm = 0, payorder = 0, paysuccess = 0;
+        const root = document.querySelector(':root');
+        const SignUpBtn = document.getElementById("sign-up-btn");
+        const PayOrderBtn = document.getElementById("pay-order-btn");
+        var SignUpEmail, SignUpName, SignUpPass, EmailResetInput;
+
+        const SignUpForm = document.getElementById("sign-up-form");
+        const LogInForm = document.getElementById("log-in-form");
+        const Content = document.getElementById("content");
+        const ContentThird = document.getElementById("content-third");
+        const ContentFour = document.getElementById("content-four");
+        const ContentResetPass = document.getElementById("content-second");
+        const FormResetPass = document.getElementById("form-reset-pass");
+        const FormResetConfirm = document.getElementById("form-reset-confirm");
+        
+        function ChangeToLogIn() {
+            if (signup == 1)  {
+                SignUpEmail = document.getElementById("sign-up-email").value;
+                SignUpName = document.getElementById("sign-up-name").value;
+                SignUpPass = document.getElementById("sign-up-name").value;
+
+                if (SignUpEmail[0] >= '0' && SignUpEmail[0] <= '9') {
+                    alert("Email cần bắt đầu bằng một chữ cái!");
+                    return;
+                }
+                else if (!SignUpEmail.includes('@')) {
+                    alert("Email bạn nhập chưa đúng định dạng!");
+                    return;
+                }
+
+                if (SignUpName[0] >= '0' && SignUpName[0] <= '9') {
+                    alert("Tên đăng nhập cần bắt đầu bằng một chữ cái!");
+                    return;
+                }
+
+                SignUpForm.style = "display: none";
+                signup = 0;
+            }  
+            else if (resetconfirm == 1) {
+                ContentResetPass.style = "display: none;";
+                FormResetConfirm.style = "display: none;";
+                resetconfirm = 0;
+            }
+            Content.style = "display: block;";
+            LogInForm.style = "display: flex";
+            login = 1;
+        }
+
+        function ChangeToSignUp() {
+            if (login == 1) {
+                login = 0;
+                LogInForm.style = "display: none"; 
+            }
+            SignUpEmail = document.getElementById("sign-up-email");
+            SignUpEmail.value = "";
+            SignUpName = document.getElementById("sign-up-name");
+            SignUpName.value = "";
+            SignUpPass = document.getElementById("sign-up-password");
+            SignUpPass.value = "";
+            signup = 1; 
+            SignUpForm.style = "display: flex";
+        }
+
+        function ChangeToResetPass() {
+            EmailResetInput = document.getElementById("email-reset-input");
+            EmailResetInput.value = "";
+            if (login == 1) {
+                login = 0;
+                LogInForm.style = "display: none";
+                Content.style = "display: none;"; 
+                ContentResetPass.style = "display: block;";
+                FormResetPass.style = "display: flex;";
+                resetpass = 1;
+            }
+            else if (resetconfirm == 1) {
+                resetconfirm = 0;   
+                FormResetConfirm.style = "display: none;";
+                FormResetPass.style = "display: flex;";
+                resetpass = 1;
+            }
+        }
+
+        function ChangeToResetConfirm() {
+            EmailResetInput = document.getElementById("email-reset-input").value;
+            if (EmailResetInput[0] >= '0' && EmailResetInput[0] <= '9') {
+                 alert("Email cần bắt đầu bằng một chữ cái!");
+                return;
+            }
+            else if (!EmailResetInput.includes('@')) {
+                 alert("Email bạn nhập chưa đúng định dạng!");
+                return;
+            }
+            FormResetPass.style = "display: none;";
+            FormResetConfirm.style = "display: flex;";
+            resetconfirm = 1;
+        }
+
+        function ChangeToPaySuccess() {
+            ContentFour.style = "display: none"
+            payorder = 0;
+            ContentThird.style = "display: block";
+            paysuccess = 1;
+        }
+
+        const BtnCodPay = document.getElementById("btn-cod-pay");
+        const BtnQrPay = document.getElementById("btn-qr-pay");
+
+        function CodPayChosen() {
+            if (btnqrpay == 1) {
+                BtnQrPay.style = "background-color: #E7B559; color: var(--black-color);"
+                btnqrpay = 0;
+            }
+            BtnCodPay.style = "background-color: var(--black-color); color: var(--white-color);"
+            btncodpay = 1;                 
+        }
+
+        function QrPayChosen() {
+            if (btncodpay == 1) {
+                BtnCodPay.style = "background-color: #E7B559; color: var(--black-color);"    
+                btncodpay = 0;
+            }
+            BtnQrPay.style = "background-color: var(--black-color); color: var(--white-color);"   
+            btnqrpay = 1;             
+        }
+    </script>
+</html>
+

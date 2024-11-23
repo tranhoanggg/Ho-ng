@@ -1,0 +1,112 @@
+:root {
+    --white-color: #fff;
+    --text-color: #E7E8E8;
+    --black-color: #000;
+    --primary-color: #ff0303;
+    --numberClick: 1;
+    --base-color: #BC433B;
+
+    --user-profile: 0;
+    --reset-password: 0;
+    --reset-confirm: 0;
+    --cart: 0;
+    --pay-info: 0;
+    --pay-success: 0;
+    --access: 0;
+    --product: 0;
+    --product-detail: 0;
+    --catalog: 0;
+    --catelog-classify: 0;
+
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', 'sans-serif';
+    box-sizing: border-box;
+
+}
+
+/* Responsive */
+.grid {
+    width: 1440px;
+    max-width: 100%;
+    margin: 0 auto;
+
+}
+
+.grid__full-width {
+    width: 100%;
+
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+
+}
+
+.grid__column-2 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc((100% / 12) * 2);
+}
+
+.grid__column-10 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc((100% / 12) * 10);
+}
+
+.grid__column-2-5 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 20%;
+    
+}
+
+.grid__column-4-5 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 40%;
+    
+}
+
+.grid__column-8-2 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 67%;
+    
+}
+
+.grid__column-4-2 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 33%;
+    
+}
+
+.grid__column-3-4 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 33%;
+    
+}
+
+.content__form-btn {
+    font-size: 2.4rem;
+    width: 640px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 32px;
+    cursor: pointer;
+}
