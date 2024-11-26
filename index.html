@@ -239,66 +239,30 @@
                             Thông tin đặt hàng
                         </div>
 
-                        <div class="content__four-name-input">
-                            <div class="content__four-name-input__heading">Họ và tên*</div>
-                            <input type="text">
-                        </div>
+                        <div id="content-four__user-select" class="content-four__user-select" onclick="SelectAddress()">
+                            <div id="tag-default" class="info-select-default-tag">Mặc định</div>
+                            <div id="name-option-default" class="info-select-default-name">Trần Minh Hoàng</div>
+                            <div id="phone-option-default" class="info-select-default-phone">0303030303</div>
+                            <div id="address-option-default" class="info-select-default-address">Phùng Khoang, Trung Văn</div>
+                            <i class="ti-angle-down info-select-drop-btn"></i>
 
-                        <div class="content__four-email-input">
-                            <div class="content__four-email-input__heading">Địa chỉ email*</div>
-                            <input type="text">
-                        </div>
-
-                        <div class="content__four-phone-input">
-                            <div class="content__four-phone-input__heading">Số điện thoại*</div>
-                            <input type="text">
-                        </div>
-
-                        <label class="content__four-city-select__heading" for="city-select">Tỉnh/Thành phố*</label>
-                        <select class="content__four-city-select" name="city" id="city-select">
-                            <option value="">--Please choose an option--</option>
-                            <option value="HN">Hà Nội</option>
-                            <option value="HCM">Hồ Chí Minh</option>
-                            <option value="PT">Phú Thọ</option>
-                            <option value="NĐ">Nam Định</option>
-                            <option value="TH">Thanh Hoá</option>
-                            <option value="BN">Bắc Ninh</option>
-                        </select>
-
-                        <label class="content__four-district-select__heading" for="district-select">Quận/Huyện*</label>
-                        <select class="content__four-district-select" name="district" id="district-select">
-                            <option value="">--Please choose an option--</option>
-                            <option value="HN">Hà Nội</option>
-                            <option value="HCM">Hồ Chí Minh</option>
-                            <option value="PT">Phú Thọ</option>
-                            <option value="NĐ">Nam Định</option>
-                            <option value="TH">Thanh Hoá</option>
-                            <option value="BN">Bắc Ninh</option>
-                        </select>
-
-                        <label class="content__four-town-select__heading" for="town-select">Phường/Xã*</label>
-                        <select class="content__four-town-select" name="town" id="town-select">
-                            <option value="">--Please choose an option--</option>
-                            <option value="HN">Hà Nội</option>
-                            <option value="HCM">Hồ Chí Minh</option>
-                            <option value="PT">Phú Thọ</option>
-                            <option value="NĐ">Nam Định</option>
-                            <option value="TH">Thanh Hoá</option>
-                            <option value="BN">Bắc Ninh</option>
-                        </select>
-
-                        <div class="content__four-address-input">
-                            <div class="content__four-address-input__heading">Địa chỉ cụ thể*</div>
-                            <input type="text">
-                        </div>
-
-                        <div class="content__four-note-input">
-                            <div class="content__four-note-input__heading">Chú thích đơn hàng*</div>
-                            <input type="text">
-                        </div>
-
-                        <div class="content-four__sub-heading">
-                            Thông tin thanh toán sản phẩm
+                            <ul id="user-select-address" class="user-select-address">
+                                <li class="user-select-address-item-1" onclick="switchAddress(1)">
+                                    <div id="name-option" class="info-select-name">Trần Văn Sỹ</div>
+                                    <div id="phone-option" class="info-select-phone">0403030303</div>
+                                    <div id="address-option" class="info-select-address">Phùng Khoang, Trung Văn</div>
+                                </li>
+                                <li class="user-select-address-item-2" onclick="switchAddress(2)">
+                                    <div id="name-option" class="info-select-name">Nguyễn Thành Nam</div>
+                                    <div id="phone-option" class="info-select-phone">0503030303</div>
+                                    <div id="address-option" class="info-select-address">Phùng Khoang, Trung Văn</div>
+                                </li>
+                                <li class="user-select-address-item-3" onclick="switchAddress(3)">
+                                    <div id="name-option" class="info-select-name">Phùng Đức Hưng</div>
+                                    <div id="phone-option" class="info-select-phone">0603030303</div>
+                                    <div id="address-option" class="info-select-address">Phùng Khoang, Trung Văn</div>
+                                </li>
+                            </ul>
                         </div>
 
                         <div class="content-four__product-info">
@@ -382,6 +346,414 @@
                 </div>
             </div>
 
+            <div id="content-fifth-ordered" class="content-fifth ordered-page">
+                <div class="grid__full-width">
+                    <div class="content-fifth content__form-logo">
+                        <img src="./assets/img/Logo.png" alt="Kinh Đô" class="">                          
+                    </div>
+
+                    <div class="content-fifth__heading">
+                        QUẢN LÝ ĐƠN HÀNG
+                    </div>
+
+                    <div class="content-fifth__form">
+                        <div class="content-fifth__form-heading">
+                            <span class="heading-title">Chi tiết đơn hàng #00005</span>
+                            <span class="heading-mark">-</span>
+                            <span class="heading-tag">Đã đặt hàng</span>
+                        </div>
+
+                        <div class="content-fifth__form-state">
+                            <div class="ordered-state">
+                                <i class="state-checked ti-clipboard ordered-state__icon"></i>
+                                <i class="state-checked__sub-icon ti-menu ordered-state__sub-icon"></i>
+                                <div class="sub">Đơn hàng đã đặt</div>
+                                <div class="time">10:26 - 14.11.2024</div>
+                            </div>
+
+                            <svg width="1700px" xmlns="http://www.w3.org/2000/svg" style="position: absolute;">
+                                <line x1="531" y1="30" x2="725" y2="30" style="stroke:#13141C; stroke-width:2"/>
+                            </svg>
+
+                            <div class="waiting-state">
+                                <i class="state-unchecked fa-solid fa-arrow-right-arrow-left waiting-state__icon"></i>
+                                <div class="sub">Tiếp nhận và chờ xử lý</div>
+                                <div class="time">10:41 - 16.11.2024</div>
+                            </div>
+
+                            <svg width="1700px" xmlns="http://www.w3.org/2000/svg" style="position: absolute;">
+                                <line x1="781" y1="30" x2="961" y2="30" style="stroke:#13141C; stroke-width:2"/>
+                            </svg>
+
+                            <div class="deliver-state">
+                                <i class="state-unchecked ti-truck ordered-state__icon"></i>
+                                <div class="sub">Đang giao</div>
+                                <div class="time">10:41 - 16.11.2024</div>
+                            </div>
+
+                            <svg width="1700px" xmlns="http://www.w3.org/2000/svg" style="position: absolute;">
+                                <line x1="1020" y1="30" x2="1170" y2="30" style="stroke:#13141C; stroke-width:2"/>
+                            </svg>
+
+                            <div class="deliver-success-state">
+                                <i class="state-unchecked ti-clipboard deliver-success-state__icon"></i>
+                                <i class="state-unchecked__sub-icon ti-check deliver-success-state__sub-icon"></i>
+                                <div class="sub">Giao thành công</div>
+                                <div class="time">10:41 - 16.11.2024</div>
+                            </div>
+                        </div>
+
+                        <div class="content-fifth__info">
+                            <div class="content-fifth__info-user">
+                                <div class="info-user__heading">Thông tin khách hàng</div>
+                                <div class="info-user__name">
+                                    <div class="name-title">Người nhận:</div>
+                                    <div class="name-content">Trần Văn Sỹ - 0303030303</div>
+                                </div>
+                                <div class="info-user__address">
+                                    <div class="address-title">Địa chỉ nhận hàng:</div>
+                                    <div class="address-content">Nam Từ Liêm - Hà Nội</div>
+                                </div>
+                            </div>
+
+                            <div class="content-fifth__info-payment">
+                                <div class="info-payment__heading">Hình thức thanh toán</div>
+                                <div class="info-payment__content">Chưa thanh toán</div>
+                            </div>
+                        </div>
+
+                        <div class="content-fifth__bill">
+                            <div class="bill__heading">Thông tin sản phẩm</div>
+                            <div class="bill__product">
+                                <img src="./assets/img/image.png" alt="">
+                                <div class="bill__product-info">
+                                    <div class="product-info__name">Trăng vàng hoàng kim</div>
+                                    <div class="product-info__quantity-per-one">6 cái / hộp</div>
+                                    <div class="product-info__quantity">x 2</div>
+                                </div>
+                                <div class="bill__product-price">
+                                    <div class="product-info__price">499.000đ</div>
+                                    <div class="product-info__total">
+                                        <span>Tổng tiền: </span>
+                                        <span class="product-info__total number">998.000đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button href="#" class="content-fifth__btn" style="cursor: pointer;">
+                            Quay lại danh sách đơn hàng
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content-fifth-waiting" class="content-fifth waiting-page">
+                <div class="grid__full-width">
+                    <div class="content-fifth content__form-logo">
+                        <img src="./assets/img/Logo.png" alt="Kinh Đô" class="">                          
+                    </div>
+
+                    <div class="content-fifth__heading">
+                        QUẢN LÝ ĐƠN HÀNG
+                    </div>
+
+                    <div class="content-fifth__form">
+                        <div class="content-fifth__form-heading">
+                            <span class="heading-title">Chi tiết đơn hàng #00005</span>
+                            <span class="heading-mark">-</span>
+                            <span class="heading-tag">Đang xử lý</span>
+                        </div>
+
+                        <div class="content-fifth__form-state">
+                            <div class="ordered-state">
+                                <i class="state-checked ti-clipboard ordered-state__icon"></i>
+                                <i class="state-checked__sub-icon ti-menu ordered-state__sub-icon"></i>
+                                <div class="sub">Đơn hàng đã đặt</div>
+                                <div class="time">10:26 - 14.11.2024</div>
+                            </div>
+
+                            <svg width="1700px" xmlns="http://www.w3.org/2000/svg" style="position: absolute;">
+                                <line x1="531" y1="30" x2="725" y2="30" style="stroke:var(--base-color); stroke-width:2"/>
+                            </svg>
+
+                            <div class="waiting-state">
+                                <i class="state-checked fa-solid fa-arrow-right-arrow-left waiting-state__icon"></i>
+                                <div class="sub">Tiếp nhận và chờ xử lý</div>
+                                <div class="time">10:41 - 16.11.2024</div>
+                            </div>
+
+                            <svg width="1700px" xmlns="http://www.w3.org/2000/svg" style="position: absolute;">
+                                <line x1="781" y1="30" x2="961" y2="30" style="stroke:#13141C; stroke-width:2"/>
+                            </svg>
+
+                            <div class="deliver-state">
+                                <i class="state-unchecked ti-truck ordered-state__icon"></i>
+                                <div class="sub">Đang giao</div>
+                                <div class="time">10:41 - 16.11.2024</div>
+                            </div>
+
+                            <svg width="1700px" xmlns="http://www.w3.org/2000/svg" style="position: absolute;">
+                                <line x1="1020" y1="30" x2="1170" y2="30" style="stroke:#13141C; stroke-width:2"/>
+                            </svg>
+
+                            <div class="deliver-success-state">
+                                <i class="state-unchecked ti-clipboard deliver-success-state__icon"></i>
+                                <i class="state-unchecked__sub-icon ti-check deliver-success-state__sub-icon"></i>
+                                <div class="sub">Giao thành công</div>
+                                <div class="time">10:41 - 16.11.2024</div>
+                            </div>
+                        </div>
+
+                        <div class="content-fifth__info">
+                            <div class="content-fifth__info-user">
+                                <div class="info-user__heading">Thông tin khách hàng</div>
+                                <div class="info-user__name">
+                                    <div class="name-title">Người nhận:</div>
+                                    <div class="name-content">Trần Văn Sỹ - 0303030303</div>
+                                </div>
+                                <div class="info-user__address">
+                                    <div class="address-title">Địa chỉ nhận hàng:</div>
+                                    <div class="address-content">Nam Từ Liêm - Hà Nội</div>
+                                </div>
+                            </div>
+
+                            <div class="content-fifth__info-payment">
+                                <div class="info-payment__heading">Hình thức thanh toán</div>
+                                <div class="info-payment__content">Chưa thanh toán</div>
+                            </div>
+                        </div>
+
+                        <div class="content-fifth__bill">
+                            <div class="bill__heading">Thông tin sản phẩm</div>
+                            <div class="bill__product">
+                                <img src="./assets/img/image.png" alt="">
+                                <div class="bill__product-info">
+                                    <div class="product-info__name">Trăng vàng hoàng kim</div>
+                                    <div class="product-info__quantity-per-one">6 cái / hộp</div>
+                                    <div class="product-info__quantity">x 2</div>
+                                </div>
+                                <div class="bill__product-price">
+                                    <div class="product-info__price">499.000đ</div>
+                                    <div class="product-info__total">
+                                        <span>Tổng tiền: </span>
+                                        <span class="product-info__total number">998.000đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button href="#" class="content-fifth__btn" style="cursor: pointer;">
+                            Quay lại danh sách đơn hàng
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content-fifth-delivery" class="content-fifth delivery-page">
+                <div class="grid__full-width">
+                    <div class="content-fifth content__form-logo">
+                        <img src="./assets/img/Logo.png" alt="Kinh Đô" class="">                          
+                    </div>
+
+                    <div class="content-fifth__heading">
+                        QUẢN LÝ ĐƠN HÀNG
+                    </div>
+
+                    <div class="content-fifth__form">
+                        <div class="content-fifth__form-heading">
+                            <span class="heading-title">Chi tiết đơn hàng #00005</span>
+                            <span class="heading-mark">-</span>
+                            <span class="heading-tag">Đang vận chuyển</span>
+                        </div>
+
+                        <div class="content-fifth__form-state">
+                            <div class="ordered-state">
+                                <i class="state-checked ti-clipboard ordered-state__icon"></i>
+                                <i class="state-checked__sub-icon ti-menu ordered-state__sub-icon"></i>
+                                <div class="sub">Đơn hàng đã đặt</div>
+                                <div class="time">10:26 - 14.11.2024</div>
+                            </div>
+
+                            <svg width="1700px" xmlns="http://www.w3.org/2000/svg" style="position: absolute;">
+                                <line x1="531" y1="30" x2="725" y2="30" style="stroke:var(--base-color); stroke-width:2"/>
+                            </svg>
+
+                            <div class="waiting-state">
+                                <i class="state-checked fa-solid fa-arrow-right-arrow-left waiting-state__icon"></i>
+                                <div class="sub">Tiếp nhận và chờ xử lý</div>
+                                <div class="time">10:41 - 16.11.2024</div>
+                            </div>
+
+                            <svg width="1700px" xmlns="http://www.w3.org/2000/svg" style="position: absolute;">
+                                <line x1="781" y1="30" x2="961" y2="30" style="stroke:var(--base-color); stroke-width:2"/>
+                            </svg>
+
+                            <div class="deliver-state">
+                                <i class="state-checked ti-truck ordered-state__icon"></i>
+                                <div class="sub">Đang giao</div>
+                                <div class="time">10:41 - 16.11.2024</div>
+                            </div>
+
+                            <svg width="1700px" xmlns="http://www.w3.org/2000/svg" style="position: absolute;">
+                                <line x1="1020" y1="30" x2="1170" y2="30" style="stroke:#13141C; stroke-width:2"/>
+                            </svg>
+
+                            <div class="deliver-success-state">
+                                <i class="state-unchecked ti-clipboard deliver-success-state__icon"></i>
+                                <i class="state-unchecked__sub-icon ti-check deliver-success-state__sub-icon"></i>
+                                <div class="sub">Giao thành công</div>
+                                <div class="time">10:41 - 16.11.2024</div>
+                            </div>
+                        </div>
+
+                        <div class="content-fifth__info">
+                            <div class="content-fifth__info-user">
+                                <div class="info-user__heading">Thông tin khách hàng</div>
+                                <div class="info-user__name">
+                                    <div class="name-title">Người nhận:</div>
+                                    <div class="name-content">Trần Văn Sỹ - 0303030303</div>
+                                </div>
+                                <div class="info-user__address">
+                                    <div class="address-title">Địa chỉ nhận hàng:</div>
+                                    <div class="address-content">Nam Từ Liêm - Hà Nội</div>
+                                </div>
+                            </div>
+
+                            <div class="content-fifth__info-payment">
+                                <div class="info-payment__heading">Hình thức thanh toán</div>
+                                <div class="info-payment__content">Chưa thanh toán</div>
+                            </div>
+                        </div>
+
+                        <div class="content-fifth__bill">
+                            <div class="bill__heading">Thông tin sản phẩm</div>
+                            <div class="bill__product">
+                                <img src="./assets/img/image.png" alt="">
+                                <div class="bill__product-info">
+                                    <div class="product-info__name">Trăng vàng hoàng kim</div>
+                                    <div class="product-info__quantity-per-one">6 cái / hộp</div>
+                                    <div class="product-info__quantity">x 2</div>
+                                </div>
+                                <div class="bill__product-price">
+                                    <div class="product-info__price">499.000đ</div>
+                                    <div class="product-info__total">
+                                        <span>Tổng tiền: </span>
+                                        <span class="product-info__total number">998.000đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button href="#" class="content-fifth__btn" style="cursor: pointer;">
+                            Quay lại danh sách đơn hàng
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content-fifth-delivery-success" class="content-fifth delivery-success-page">
+                <div class="grid__full-width">
+                    <div class="content-fifth content__form-logo">
+                        <img src="./assets/img/Logo.png" alt="Kinh Đô" class="">                          
+                    </div>
+
+                    <div class="content-fifth__heading">
+                        QUẢN LÝ ĐƠN HÀNG
+                    </div>
+
+                    <div class="content-fifth__form">
+                        <div class="content-fifth__form-heading">
+                            <span class="heading-title">Chi tiết đơn hàng #00005</span>
+                            <span class="heading-mark">-</span>
+                            <span class="heading-tag">Giao hàng thành công</span>
+                        </div>
+
+                        <div class="content-fifth__form-state">
+                            <div class="ordered-state">
+                                <i class="state-checked ti-clipboard ordered-state__icon"></i>
+                                <i class="state-checked__sub-icon ti-menu ordered-state__sub-icon"></i>
+                                <div class="sub">Đơn hàng đã đặt</div>
+                                <div class="time">10:26 - 14.11.2024</div>
+                            </div>
+
+                            <svg width="1700px" xmlns="http://www.w3.org/2000/svg" style="position: absolute;">
+                                <line x1="531" y1="30" x2="725" y2="30" style="stroke:var(--base-color); stroke-width:2"/>
+                            </svg>
+
+                            <div class="waiting-state">
+                                <i class="state-checked fa-solid fa-arrow-right-arrow-left waiting-state__icon"></i>
+                                <div class="sub">Tiếp nhận và chờ xử lý</div>
+                                <div class="time">10:41 - 16.11.2024</div>
+                            </div>
+
+                            <svg width="1700px" xmlns="http://www.w3.org/2000/svg" style="position: absolute;">
+                                <line x1="781" y1="30" x2="961" y2="30" style="stroke:var(--base-color); stroke-width:2"/>
+                            </svg>
+
+                            <div class="deliver-state">
+                                <i class="state-checked ti-truck ordered-state__icon"></i>
+                                <div class="sub">Đang giao</div>
+                                <div class="time">10:41 - 16.11.2024</div>
+                            </div>
+
+                            <svg width="1700px" xmlns="http://www.w3.org/2000/svg" style="position: absolute;">
+                                <line x1="1020" y1="30" x2="1170" y2="30" style="stroke:var(--base-color); stroke-width:2"/>
+                            </svg>
+
+                            <div class="deliver-success-state">
+                                <i class="state-checked ti-clipboard deliver-success-state__icon"></i>
+                                <i class="state-checked__sub-icon ti-check deliver-success-state__sub-icon"></i>
+                                <div class="sub">Giao thành công</div>
+                                <div class="time">10:41 - 16.11.2024</div>
+                            </div>
+                        </div>
+
+                        <div class="content-fifth__info">
+                            <div class="content-fifth__info-user">
+                                <div class="info-user__heading">Thông tin khách hàng</div>
+                                <div class="info-user__name">
+                                    <div class="name-title">Người nhận:</div>
+                                    <div class="name-content">Trần Văn Sỹ - 0303030303</div>
+                                </div>
+                                <div class="info-user__address">
+                                    <div class="address-title">Địa chỉ nhận hàng:</div>
+                                    <div class="address-content">Nam Từ Liêm - Hà Nội</div>
+                                </div>
+                            </div>
+
+                            <div class="content-fifth__info-payment">
+                                <div class="info-payment__heading">Hình thức thanh toán</div>
+                                <div class="info-payment__content">Chưa thanh toán</div>
+                            </div>
+                        </div>
+
+                        <div class="content-fifth__bill">
+                            <div class="bill__heading">Thông tin sản phẩm</div>
+                            <div class="bill__product">
+                                <img src="./assets/img/image.png" alt="">
+                                <div class="bill__product-info">
+                                    <div class="product-info__name">Trăng vàng hoàng kim</div>
+                                    <div class="product-info__quantity-per-one">6 cái / hộp</div>
+                                    <div class="product-info__quantity">x 2</div>
+                                </div>
+                                <div class="bill__product-price">
+                                    <div class="product-info__price">499.000đ</div>
+                                    <div class="product-info__total">
+                                        <span>Tổng tiền: </span>
+                                        <span class="product-info__total number">998.000đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button href="#" class="content-fifth__btn" style="cursor: pointer;">
+                            Quay lại danh sách đơn hàng
+                        </button>
+                    </div>
+                </div>
+            </div>
+
             <!-- FOOTER -->
             <div class="footer">
                 <div class="grid__full-width">
@@ -433,10 +805,16 @@
     <script>
         var home = 0, signup = 1, login = 0, btncodpay = 0, btnqrpay = 0,
             resetpass = 0, resetconfirm = 0, payorder = 0, paysuccess = 0;
+
         const root = document.querySelector(':root');
         const SignUpBtn = document.getElementById("sign-up-btn");
         const PayOrderBtn = document.getElementById("pay-order-btn");
-        var SignUpEmail, SignUpName, SignUpPass, EmailResetInput;
+
+        var SignUpEmail, SignUpName, SignUpPass, EmailResetInput,
+        SelectAddress, ListAddress, AddressSelected = 0,
+        NameOption, PhoneOption, AddressOption, NameTemp, PhoneTemp, AgeTemp,
+        NameDefault = "Trần Minh Hoàng", PhoneDefault = "0303030303", AddressDefault = "Phùng Khoang, Trung Văn",
+        NameSelected, PhoneSelected, AddressSelected, TagDefault;
 
         const SignUpForm = document.getElementById("sign-up-form");
         const LogInForm = document.getElementById("log-in-form");
@@ -555,6 +933,81 @@
             }
             BtnQrPay.style = "background-color: var(--black-color); color: var(--white-color);"   
             btnqrpay = 1;             
+        }
+
+        function SelectAddress() {
+            ListAddress = document.getElementById("user-select-address");
+
+            if (AddressSelected == 1) {
+                AddressSelected = 0;
+                ListAddress.style = 'display: none;';
+            }
+            else {
+                AddressSelected = 1;
+                ListAddress.style = 'display: block;';
+            }
+        }
+
+        function switchAddress(index) {
+            TagDefault = document.getElementById("tag-default");
+            NameSelected = document.getElementById("name-option-default");
+            PhoneSelected = document.getElementById("phone-option-default");
+            AddressSelected = document.getElementById("address-option-default");
+
+            NameOption = document.querySelectorAll('#name-option');
+            PhoneOption = document.querySelectorAll('#phone-option');
+            AddressOption = document.querySelectorAll('#address-option');
+
+            switch (index) {
+                case 1:
+                    NameTemp = NameOption[0].textContent;
+                    PhoneTemp = PhoneOption[0].textContent;
+                    AddressTemp = AddressOption[0].textContent;
+
+                    NameOption[0].textContent = NameSelected.textContent;
+                    PhoneOption[0].textContent = PhoneSelected.textContent;
+                    AddressOption[0].textContent = AddressSelected.textContent;
+
+                    NameSelected.textContent = NameTemp;
+                    PhoneSelected.textContent = PhoneTemp;
+                    AddressSelected.textContent = AddressTemp;
+                    break;
+                case 2:
+                    NameTemp = NameOption[1].textContent;
+                    PhoneTemp = PhoneOption[1].textContent;
+                    AddressTemp = AddressOption[1].textContent;
+
+                    NameOption[1].textContent = NameSelected.textContent;
+                    PhoneOption[1].textContent = PhoneSelected.textContent;
+                    AddressOption[1].textContent = AddressSelected.textContent;
+
+                    NameSelected.textContent = NameTemp;
+                    PhoneSelected.textContent = PhoneTemp;
+                    AddressSelected.textContent = AddressTemp;
+                    break;
+                case 3:
+                    NameTemp = NameOption[2].textContent;
+                    PhoneTemp = PhoneOption[2].textContent;
+                    AddressTemp = AddressOption[2].textContent;
+
+                    NameOption[2].textContent = NameSelected.textContent;
+                    PhoneOption[2].textContent = PhoneSelected.textContent;
+                    AddressOption[2].textContent = AddressSelected.textContent;
+
+                    NameSelected.textContent = NameTemp;
+                    PhoneSelected.textContent = PhoneTemp;
+                    AddressSelected.textContent = AddressTemp;
+                    break;
+            }
+
+            if (NameTemp==NameDefault && PhoneTemp==PhoneDefault && AddressTemp==AddressDefault) {
+                TagDefault.style = "opacity: 1;"
+            }
+            else {
+                TagDefault.style = "opacity: 0;"
+
+            }
+            SelectAddress();
         }
     </script>
 </html>
