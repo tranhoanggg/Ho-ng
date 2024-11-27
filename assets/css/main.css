@@ -503,7 +503,7 @@ body {
 
 .content-four {
     background-color: #E7B559; 
-    /* display: none; */
+    display: none;
 
 }
 
@@ -947,6 +947,11 @@ body {
     opacity: 0.4;
 }
 
+.state-unchecked__time {
+    opacity: 0;
+
+}
+
 .state-checked {
     color: var(--base-color);
     border: 1px solid var(--base-color);
@@ -954,6 +959,11 @@ body {
 
 .state-checked__sub-icon {
     color: var(--base-color);
+}
+
+.state-checked__time {
+    opacity: 1;
+    
 }
 
 .content-fifth__info {
@@ -1125,7 +1135,7 @@ body {
 }
 
 .delivery-success-page {
-    display: none;
+    /* display: none; */
 
 }
 
